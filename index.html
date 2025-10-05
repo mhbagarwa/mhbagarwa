@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Flook - PCPNDT F-Form Software </title>
-  <meta name="description" content="India's Best Ultrasound Software since 10 years">
+  <title>Flook - Modern PCPNDT F-Form Software</title>
+  <meta name="description" content="India's Best Ultrasound Software - Modern, AI-Powered F-Form Solution">
   <meta name="keywords" content="Sonography software, Ultrasound software, PCPNDT software, F-Form software">
 
   <!-- Favicons -->
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,1249 +24,1068 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Modern CSS -->
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #10b981;
+      --accent: #f59e0b;
+      --dark: #1e293b;
+      --darker: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --gray-light: #cbd5e1;
+      --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
 
-  <!-- =======================================================
-  * Template Name: NewBiz
-  * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--light);
+      overflow-x: hidden;
+    }
+
+    .modern-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .modern-nav.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.1"><polygon fill="white" points="0,1000 1000,0 1000,1000"/></svg>');
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+
+    .btn-modern {
+      padding: 12px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary-modern {
+      background: var(--gradient);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary-modern:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    .btn-outline-modern {
+      border: 2px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .btn-outline-modern:hover {
+      background: white;
+      color: var(--primary);
+    }
+
+    .section-modern {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--darker);
+      margin-bottom: 1rem;
+    }
+
+    .section-title p {
+      font-size: 1.125rem;
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+    }
+
+    .feature-icon i {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--darker);
+    }
+
+    .feature-card p {
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* Demo Video Section Styles */
+    .demo-section {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .demo-video-card {
+      background: white;
+      border-radius: 24px;
+      padding: 0;
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .demo-video-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background: var(--darker);
+      border-radius: 24px 24px 0 0;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+
+    .video-play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .video-play-btn:hover {
+      background: white;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .video-play-btn i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-left: 4px;
+    }
+
+    .video-content {
+      padding: 40px;
+    }
+
+    .video-badge {
+      background: var(--gradient);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .video-stats {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-light);
+    }
+
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray);
+      font-size: 0.875rem;
+    }
+
+    .stat i {
+      color: var(--primary);
+    }
+
+    /* Updated Pricing Card Styles */
+    .pricing-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-card.popular {
+      border: 2px solid var(--primary);
+      transform: scale(1.05);
+    }
+
+    .pricing-card.popular::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: var(--primary);
+      color: white;
+      padding: 5px 40px;
+      transform: rotate(45deg);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .pricing-card.popular:hover {
+      transform: scale(1.05) translateY(-5px);
+    }
+
+    .price-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .price-badge {
+      background: var(--accent);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .price-original {
+      font-size: 1.25rem;
+      color: var(--gray);
+      text-decoration: line-through;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-amount {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--darker);
+      margin: 0.5rem 0;
+      line-height: 1;
+    }
+
+    .price-discount {
+      background: #dcfce7;
+      color: #166534;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .price-period {
+      color: var(--gray);
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+
+    .savings-badge {
+      background: linear-gradient(135deg, #10b981, #34d399);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+
+    .feature-list li {
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .feature-list li i {
+      color: var(--secondary);
+      font-size: 1.125rem;
+    }
+
+    .modern-footer {
+      background: var(--darker);
+      color: white;
+      padding: 80px 0 0;
+    }
+
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links ul li a {
+      color: var(--gray-light);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links ul li a:hover {
+      color: white;
+    }
+
+    .floating-shape {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .shape-1 {
+      width: 300px;
+      height: 300px;
+      top: -150px;
+      right: -150px;
+      animation-delay: 0s;
+    }
+
+    .shape-2 {
+      width: 200px;
+      height: 200px;
+      bottom: -100px;
+      left: -100px;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+    .stats-section {
+      background: var(--gradient);
+      color: white;
+      padding: 80px 0;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 1.125rem;
+      opacity: 0.9;
+    }
+
+    .ai-section {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      color: white;
+      border-radius: 30px;
+      margin: 100px 0;
+      overflow: hidden;
+    }
+
+    .ai-badge {
+      background: var(--secondary);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .pricing-card.popular {
+        transform: scale(1);
+      }
+      
+      .pricing-card.popular:hover {
+        transform: translateY(-5px);
+      }
+      
+      .price-amount {
+        font-size: 2.5rem;
+      }
+      
+      .video-container {
+        height: 250px;
+      }
+      
+      .video-content {
+        padding: 30px 20px;
+      }
+    }
+  </style>
 </head>
 
-<body class="index-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <!-- Uncomment the line below if you also wish to use text logo -->
-        <!-- <h1 class="sitename">NewBiz</h1>  -->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#feature">about</a></li>
-          <li><a href="#services">Features</a></li>
-          <li><a href="#Price">Price</a></li>
-           <li><a href="#footer">Contact</a></li>
-          <li><a href="https://wa.me/9462285123?text=I have been following your site and really admire the quality and engagement—it is a perfect match for our audience.">Career</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
+  <!-- Modern Header -->
+  <header class="modern-nav fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Flook" height="40">
+            <span class="fw-bold ms-2" style="color: var(--primary);">Flook</span>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ai">AI Solution</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <a class="btn btn-primary-modern btn-modern ms-2" href="https://wa.me/9462285123">
+                  Get Demo
+                </a>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li> -->
-         
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </div>
+        </div>
       </nav>
-
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>India's Best Ultrasound F-Form Software  </h1>
-            <p>Festive season sale for a limited time</p>
-            <div class="d-flex">
-              <a href="https://wa.me/9462285123?text=HI and I am interested in learning more about your flook software. I believe it could greatly benefit centre, and I would like to request a demo to better understand its features and capabilities." class="btn-get-started">Get a demo</a>
-              <a href="https://www.youtube.com/watch?v=y6QwWYuT0I4&feature=youtu.be" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-<!-- Pricing 1 - Bootstrap Brain Component -->
-
-
-    <!-- About Section -->
-    <section id="feature" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/about.svg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=y6QwWYuT0I4&feature=youtu.be" class="glightbox pulsating-play-btn"></a>
-          </div>
-
-          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
-            <h3>KEY BENEFITS</h3>
-            <p>
-              MAJOR BENEFITS OF FLOOK APPLICATION
-
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <h5>Improve productivity at low cost</h5>
-                  <p>This application reduce your paper cost to 50-70%. No more wastage of papers and mistakes.  
-                  </p>
-                </div>
-              </li>
-              <li>
-                <i class="bi bi-fullscreen-exit"></i>
-                <div>
-                  <h5>No more mistakes</h5>
-                  <p>Flook is a light weight and user friendly application and it changes the F-form experience.  It improves your accuracy at the top level. Any one can handle F-Form’s using this application, Its AI helps user to engage its accuracy at 99%. </p>
-                </div>
-              </li>
-              <li>
-                <i class="bi bi-broadcast"></i>
-                <div>
-                  <h5>Hassle free </h5>
-                  <p>It’s AI helps to improve your accuracy and you don’t need a deep technical knowledge.  No more carbon use for duplication of F-form’s. Its AI improves it self rapidly</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Features Section -->
-    <!-- <section id="features" class="features section">
-
-      <div class="container">
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Upload F-form data to website</h3>
-            <p class="fst-italic">
-              Flook helps to fill the data to website
-            </p>
-            <ul>
-              <li><i class="bi bi-check"></i><span> Fill patient info to website </span></li>
-              <li><i class="bi bi-check"></i> <span>Generate monthly excel report file</span></li>
-              <li><i class="bi bi-check"></i> <span>Our AI technology enhances the efficiency and speed of your work processes. By seamlessly integrating advanced algorithms, it ensures smooth and fast operations, minimizing downtime and maximizing productivity. Experience the future of work with our AI-driven solutions that adapt and evolve with your business needs, delivering consistent and remarkable results.</span></li>
-            </ul>
-          </div>
-        </div> 
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 order-lg-last d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="200">
-            <h3>This software has been leading the market with its exceptional performance and innovation for the past 9 years.</h3>
-            <p class="fst-italic">
-              Thanks for your suppport
-            </p>
-            <p>
-              This software has been leading the market with its exceptional performance and innovation for the past 9 years. From streamlining operations to enhancing user experiences, our software has consistently delivered top-notch solutions that cater to diverse industry needs. Its reliability, user-friendliness, and cutting-edge features have made it the go-to choice for businesses worldwide. We're committed to continuing this legacy of excellence and innovation for many more years to come.
-            </p>
+  <!-- Modern Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-content">
+          <h1 class="hero-title">Revolutionize Your Ultrasound Practice with AI-Powered F-Form Software</h1>
+          <p class="hero-subtitle">Streamline your PCPNDT compliance with India's most advanced, user-friendly ultrasound software solution</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="https://wa.me/9462285123" class="btn btn-primary-modern btn-modern">
+              <i class="bi bi-play-circle"></i> Get Free Demo
+            </a>
+            <a href="#demo" class="btn btn-outline-modern btn-modern">
+              Watch Demo
+            </a>
           </div>
         </div>
-
-      </div>
-
-    </section> -->
-    <!-- /Features Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Key features</h2>
-        <p>Get the Best Solutions for Your Ultrasound Business</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
-              </div>
-              <a href="" class="stretched-link">
-                <h3>Auto manage Monthly / yearly F-form excel report
-                </h3>
-              </a>
-
-              <!-- <a href="service-details.html" class="stretched-link">
-                <h3>Auto manage Monthly / yearly F-form excel report
-                </h3>
-              </a> -->
-              <p>Utilizing advanced software to generate monthly F-Forms ensures precise, organized, and accessible patient information. By automating data compilation and reporting, healthcare professionals can focus on providing exceptional care while maintaining comprehensive patient records effortlessly.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
-              </div>
-              <a href="" class="stretched-link">
-                <h3>User friendly application</h3>
-              </a>
-              <p>It’s AI helps to improve your accuracy and you don’t need a deep technical knowledge.  No more carbon use for duplication of F-form’s. Its AI improves it self rapidly. 
-              </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-text" style="color: #20c997;"></i>
-              </div>
-              <a href="" class="stretched-link">
-                <h3>Improve productivity at low cost</h3>
-              </a>
-              <p>This application reduce your paper cost to 50-70%. No more wastage of papers and mistakes.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
-              </div>
-              <a href="" class="stretched-link">
-                <h3>Easy to Print</h3>
-              </a>
-              <p>This application any type of printer to print F- Form perfect </p>
-              <a href="" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-globe" style="color: #6610f2;"></i>
-              </div>
-              <a href="" class="stretched-link">
-                <h3>Effortlessly Manage Dr and Address book</h3>
-              </a>
-              <p>Flook is designed to streamline the process of managing your professional contacts. Easily store and access detailed information for doctors, including their names, specialties, clinics, contact numbers, and addresses. With an intuitive interface and advanced search capabilities, finding the right healthcare professional is just a few clicks away. Stay organized and ensure you have all the necessary information at your fingertips, enhancing your ability to coordinate and communicate effectively.</p>
-              <a href="" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-clock" style="color: #f3268c;"></i>
-              </div>
-              <a href="" class="stretched-link">
-                <h3>No more mistakes </h3>
-              </a>
-              <p>Flook is a light weight and user friendly application and it changes the F-form experience.  It improves your accuracy at the top level. Any one can handle F-Form’s using this application, Its AI helps user to engage its accuracy at 99%. 
-              </p>
-              <a href="" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <section id="Price" class="bsb-pricing-1 bg-light py-3 py-md-5 py-xl-8">
-      <div class="container">
-        <div class="row gy-5 gy-lg-0 align-items-center">
-          <div class="col-12 col-lg-4">
-            <h2 class="display-5 mb-3 mb-xl-4">Our Pricing</h2>
-            <p class="lead mb-4 mb-xl-5">Explore our flexible pricing to find an excellent fit to run your business.</p>
-            <p class="lead mb-4 mb-xl-5">🎉 Celebrating 10 Years of Innovation!  </p>
-            <p class="lead mb-4 mb-xl-5">🎁 Anniversary Special: Enjoy exclusive discounts!</p>
-            <!-- <a href="#!" class="btn bsb-btn-xl btn-primary rounded-pill">More Plans</a> -->
-          </div>
-          <div class="col-12 col-lg-8">
-            <div class="row justify-content-xl-end">
-              <div class="col-12 col-xl-11">
-                <div class="row gy-4 gy-md-0 gx-xxl-5">
-                  <div class="col-12 col-md-6">
-                    <div class="card border-0 border-bottom border-primary shadow-sm">
-                      <div class="card-body p-4 p-xxl-5">
-                        <h2 class="h4 mb-2">Flook lite</h2>
-                        <h4 class="display-3 fw-bold text-primary mb-0">₹ 5000</h4>
-
-                        
-                        <p class="fw-light text-muted text-decoration-line-through fs-6">Starting at  ₹10000 (1st year)</p>
-                        <ul class="list-group list-group-flush mb-4">
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>F-Form</strong> Advance printing</span>
-                          </li>
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Multi Device  </strong> Login</span>
-                          </li>
-                         
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span>Installation Charge <strong>₹1000</strong></span>
-                          </li>
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Doctor </strong> and Address Book</span>
-                          </li>
-                          <!-- <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x text-danger" viewBox="0 0 16 16">
-                              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                            <span>Improve productivity at low cost <strong>This application reduce your paper cost to 50-70%. No more wastage of papers and mistakes.</strong></span>
-                          </li> -->
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x text-danger" viewBox="0 0 16 16">
-                              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                            <span>Generate Monthly F-Form: Patient <strong>Information</strong></span>
-                          </li>
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Renewal price (after first year)  </strong> 3600 rupess</span>
-                          </li>
-                        </ul>
-                        
-                        
-
-                      
-                      <a href="https://docs.google.com/forms/d/1w_nxLPRlKufKSMeEhLeEm32h0DakdC8_PlAAo24-PwI/edit#responses" class="btn bsb-btn-xl btn-primary rounded-pill">Choose Plan</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="card border-0 border-bottom border-primary shadow-lg pt-md-4 pb-md-4 bsb-pricing-popular">
-                      <div class="card-body p-4 p-xxl-5">
-                        <h2 class="h4 mb-2">Flook Pro </h2>
-                        <h4 class="display-3 fw-bold text-primary mb-0">₹6000 </h4>
-                        <p class="fw-light text-muted text-decoration-line-through fs-6">Starting at  ₹15000 (1st year)</p>
-                        
-                        <ul class="list-group list-group-flush mb-4">
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>F-Form </strong> Advance printing</span>
-                          </li>
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Multi Device </strong> Login</span>
-                          </li>
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Installation Charge  </strong> ₹FREE</span>
-                          </li>
-
-                         
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span>Doctor  <strong>and Address Book</strong></span>
-                          </li>
-                          <!-- <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span>Upload data  <strong>to website</strong></span>
-                          </li> -->
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Generate Monthly F-Form:  </strong>  Patient Information</span>
-                          </li>
-
-                          <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                            </svg>
-                            <span><strong>Renewal price (after first year)</strong>  6000 rupess</span>
-                          </li>
-
-
-                        </ul>
-                        <a href="https://docs.google.com/forms/d/1w_nxLPRlKufKSMeEhLeEm32h0DakdC8_PlAAo24-PwI/edit#responses" class="btn bsb-btn-xl btn-primary rounded-pill">Choose Plan</a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <img src="assets/img/hero-img.svg" class="img-fluid" alt="Flook Software" data-aos="fade-left">
         </div>
       </div>
-    </section>
-
-    <section class="callout" id="Price2">
-      <div class="container">
-
-        
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/alladin.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Flook AI (Complete Gmail solution) - 6000 rupess</h3>
-            <p class="fst-italic">
-              New user have great discount and get prodcut at 50% discount
-            </p>
-            <ul>
-              <li><i class="bi bi-check"></i><span> Limted time offer</span></li>
-              <li><i class="bi bi-check"></i> <span>New user have great discount and get prodcut at 50% discount</span></li>
-              <li><i class="bi bi-check"></i> <span>Renew subscritopion at 1000 rupees</span></li>
-               
-            </ul>
-          </div>
-        </div> 
-
-
-
-      </div>
+    </div>
   </section>
 
-    <!-- Why Us Section -->
-    <!-- <section id="why-us" class="why-us section dark-background"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Why Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div> -->
-      <!-- End Section Title -->
-
-      <!-- <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <span>01</span>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div> -->
-          <!-- Card Item -->
-
-          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <span>02</span>
-              <h4><a href="" class="stretched-link">Repellat Nihil</a></h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div> -->
-          <!-- Card Item -->
-
-          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <span>03</span>
-              <h4><a href="" class="stretched-link">Ad ad velit qui</a></h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div> -->
-          <!-- Card Item -->
-<!-- 
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 col-6 stat-item" data-aos="fade-up">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years Experience</div>
         </div>
+        <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Clinics Trust Us</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-number">99%</div>
+          <div class="stat-label">Accuracy Rate</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-number">70%</div>
+          <div class="stat-label">Cost Reduction</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Features Section -->
+  <section id="features" class="section-modern">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Why Choose Flook?</h2>
+        <p>Experience the future of ultrasound practice management with our cutting-edge features</p>
       </div>
 
-    </section> -->
-    <!-- /Why Us Section -->
-
-    <!-- Stats Section -->
-    <!-- <section id="stats" class="stats section dark-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-robot"></i>
             </div>
-          </div> -->
-          <!-- End Stats Item -->
+            <h3>AI-Powered Accuracy</h3>
+            <p>Our advanced AI technology ensures 99% accuracy in F-Form management, eliminating human errors and streamlining your workflow.</p>
+          </div>
+        </div>
 
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-cloud-check"></i>
             </div>
-          </div> -->
-          <!-- End Stats Item -->
+            <h3>Auto Report Generation</h3>
+            <p>Automatically generate monthly and yearly F-Form excel reports with comprehensive patient information management.</p>
+          </div>
+        </div>
 
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-wallet2"></i>
             </div>
-          </div> -->
-          <!-- End Stats Item -->
+            <h3>Cost Efficient</h3>
+            <p>Reduce paper costs by 50-70% while eliminating carbon paper usage and manual errors completely.</p>
+          </div>
+        </div>
 
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-printer"></i>
+            </div>
+            <h3>Universal Printing</h3>
+            <p>Compatible with all printer types, ensuring perfect F-Form printing every time without technical hassles.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
             </div>
-          </div> -->
-          <!-- End Stats Item -->
-
-        <!-- </div>
-
-      </div>
-
-    </section> -->
-    <!-- /Stats Section -->
-
-    <!-- Portfolio Section -->
-    <!-- <section id="portfolio" class="portfolio section"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div> -->
-      <!-- End Section Title -->
-
-      <!-- <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul> -->
-          <!-- End Portfolio Filters -->
-
-          <!-- <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-<!-- 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-          <!-- </div> -->
-          <!-- End Portfolio Container -->
-
-        <!-- </div>
-
-      </div>
-
-    </section> -->
-    <!-- /Portfolio Section -->
-
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section light-background"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div> -->
-      <!-- End Section Title -->
-
-      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <!-- End testimonial item -->
-<!-- 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <!-- End testimonial item -->
-
-          <!-- </div>
-          <div class="swiper-pagination"></div>
+            <h3>Doctor Management</h3>
+            <p>Effortlessly manage your doctor database and address book with our intuitive contact management system.</p>
+          </div>
         </div>
 
-      </div>
-
-    </section> -->
-    <!-- /Testimonials Section -->
-
-    <!-- Team Section -->
-    <!-- <section id="team" class="team section"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div -->
-      <!-- End Section Title -->
-
-      <!-- <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-phone"></i>
             </div>
-            <div class="member-info text-center">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-            </div>
-          </div> -->
-          <!-- End Team Member -->
-
-          <!-- <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-            </div>
-          </div> -->
-          <!-- End Team Member -->
-
-          <!-- <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-            </div>
-          </div> -->
-          <!-- End Team Member -->
-
-          <!-- <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
-            </div>
-          </div> -->
-          <!-- End Team Member -->
-
-          <!-- <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Brian Doe</h4>
-              <span>Marketing</span>
-              <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
-            </div>
-          </div> -->
-          <!-- End Team Member -->
-<!-- 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Josepha Palas</h4>
-              <span>Operation</span>
-              <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
-            </div>
-          </div> -->
-          <!-- End Team Member -->
-<!-- 
+            <h3>Multi-Device Access</h3>
+            <p>Access your F-Forms and patient data securely from multiple devices with seamless synchronization.</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Demo Video Section -->
+  <section id="demo" class="section-modern demo-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>See Flook in Action</h2>
+        <p>Watch how Flook transforms ultrasound practice management in just minutes</p>
       </div>
 
-    </section> -->
-    <!-- /Team Section -->
-
-    <!-- Clients Section -->
-    <!-- <section id="clients" class="clients section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-0 clients-wrap">
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-<!-- 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-
-          <!-- <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-<!-- 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-
-          <!-- <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-<!-- 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-
-          <!-- <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-
-          <!-- <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
-          </div> -->
-          <!-- End Client Item -->
-
+      <div class="row justify-content-center">
+        <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+          <div class="demo-video-card">
+            <div class="video-container" onclick="playVideo()">
+              <!-- Replace with your actual video thumbnail -->
+              <img src="assets/img/video-thumbnail.jpg" alt="Flook Software Demo" class="video-thumbnail">
+              <div class="video-play-btn">
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+            <div class="video-content">
+              <span class="video-badge">Product Demo</span>
+              <h3 class="mb-3">Complete Flook Software Walkthrough</h3>
+              <p class="text-muted mb-4">
+                See how Flook simplifies PCPNDT compliance with AI-powered F-Form management, automatic report generation, 
+                and seamless multi-device access. This 5-minute demo shows real-world usage scenarios and key features that 
+                make Flook India's most trusted ultrasound software.
+              </p>
+              
+               
+              
+              <div class="mt-4">
+                <a href="https://www.youtube.com/watch?v=y6QwWYuT0I4&feature=youtu.be" class="glightbox btn btn-primary-modern btn-modern me-3">
+                  <i class="bi bi-play-circle me-2"></i> Watch Full Demo
+                </a>
+                <a href="https://wa.me/9462285123" class="btn btn-outline-modern btn-modern" style="border-color: var(--primary); color: var(--primary);">
+                  <i class="bi bi-whatsapp me-2"></i> Get Personal Demo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /Clients Section -->
+      <!-- Additional Demo Points -->
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex align-items-start mb-4">
+            <div class="feature-icon" style="width: 60px; height: 60px; margin-right: 20px;">
+              <i class="bi bi-lightning"></i>
+            </div>
+            <div>
+              <h5>Quick Setup</h5>
+              <p class="text-muted mb-0">Get started in under 10 minutes with our easy installation process</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="d-flex align-items-start mb-4">
+            <div class="feature-icon" style="width: 60px; height: 60px; margin-right: 20px;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+              <h5>PCPNDT Compliant</h5>
+              <p class="text-muted mb-0">100% compliant with government regulations and requirements</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="d-flex align-items-start mb-4">
+            <div class="feature-icon" style="width: 60px; height: 60px; margin-right: 20px;">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <div>
+              <h5>Instant Reports</h5>
+              <p class="text-muted mb-0">Generate monthly and yearly reports with a single click</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="contact section"> -->
+  <!-- Pricing Section -->
+  <section id="pricing" class="section-modern bg-light">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Simple, Transparent Pricing</h2>
+        <p>Choose the perfect plan for your practice with our anniversary special offers</p>
+      </div>
 
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div> -->
-      <!-- End Section Title -->
-
-      <!-- <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div> -->
-            <!-- End Info Item -->
-<!-- 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div> -->
-            <!-- End Info Item -->
-
-            <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div> -->
-            <!-- End Info Item -->
-
-          <!-- </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center"> -->
-                  <!-- <div class="loading">Loading</div> -->
-                  <!-- <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-
-
-                  
-                </div>
-
-              </div>
-            </form> -->
-
+      <div class="row justify-content-center">
+        <!-- Flook Lite Plan -->
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-card">
+            <div class="price-header">
+              <span class="price-badge">Anniversary Special</span>
+              <div class="price-original">Original: ₹10,000</div>
+              <div class="price-amount">₹5,000</div>
+              <div class="price-discount">50% OFF</div>
+              <div class="price-period">First Year Only</div>
+              <div class="savings-badge">You Save ₹5,000</div>
+            </div>
             
-          <!-- </div> -->
-          <!-- End Contact Form -->
+            <h3 class="h4 mb-3 text-center">Flook Lite</h3>
+            
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle"></i> Advanced F-Form Printing</li>
+              <li><i class="bi bi-check-circle"></i> One-Device Login</li>
+              <li><i class="bi bi-check-circle"></i> Doctor & Address Book</li>
+              <li><i class="bi bi-check-circle"></i> Basic Support</li>
+              <li><i class="bi bi-x-circle text-muted"></i> <span class="text-muted">Auto Report Generation</span></li>
+              <li><i class="bi bi-check-circle"></i> Installation: ₹1,000</li>
+            </ul>
+            
+            <div class="text-center mt-4">
+              <div class="price-period mb-3">Renewal: ₹3,600/year</div>
+              <a href="https://docs.google.com/forms/d/1w_nxLPRlKufKSMeEhLeEm32h0DakdC8_PlAAo24-PwI" class="btn btn-primary-modern btn-modern w-100">
+                Choose Lite Plan
+              </a>
+            </div>
+          </div>
+        </div>
 
-        <!-- </div>
-
+        <!-- Flook Pro Plan -->
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-card popular">
+            <div class="price-header">
+              <span class="price-badge">Best Value</span>
+              <div class="price-original">Original: ₹15,000</div>
+              <div class="price-amount">₹6,000</div>
+              <div class="price-discount">60% OFF</div>
+              <div class="price-period">First Year Only</div>
+              <div class="savings-badge">You Save ₹9,000</div>
+            </div>
+            
+            <h3 class="h4 mb-3 text-center">Flook Pro</h3>
+            
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle"></i> Advanced F-Form Printing</li>
+              <li><i class="bi bi-check-circle"></i> Free Installation</li>
+              <li><i class="bi bi-check-circle"></i> Doctor & Address Book</li>
+              <li><i class="bi bi-check-circle"></i> Priority Support</li>
+              <li><i class="bi bi-check-circle"></i> Advanced Analytics</li>
+              <li><i class="bi bi-check-circle"></i> Generate Monthly F-Form: Patient Information</li>
+            </ul>
+            
+            <div class="text-center mt-4">
+              <div class="price-period mb-3">Renewal: ₹6,000/year</div>
+              <a href="https://docs.google.com/forms/d/1w_nxLPRlKufKSMeEhLeEm32h0DakdC8_PlAAo24-PwI" class="btn btn-primary-modern btn-modern w-100">
+                Choose Pro Plan
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section> -->
-    <!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Flook</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <!-- <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p> -->
-            <p class="mt-3"><strong>Phone:</strong> <span>+91 9462285123</span></p>
-            <p><strong>Email:</strong> <span>flook.customerservice@gmail.com</span></p>
+      <!-- Special Offer Note -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-8 text-center">
+          <div class="alert alert-primary border-0" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white;" data-aos="fade-up">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="bi bi-gift-fill me-3 fs-4"></i>
+              <div>
+                <strong>🎉 Celebrating 10 Years of Innovation!</strong><br>
+                Limited time anniversary offer - Get up to 60% discount on first year subscription
+              </div>
+            </div>
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Solution Section -->
+  <section id="ai" class="section-modern">
+    <div class="container">
+      <div class="ai-section">
+        <div class="row align-items-center">
+          <div class="col-lg-6 p-5" data-aos="fade-right">
+            <span class="ai-badge">Limited Time Offer</span>
+            <h2 class="text-white mb-4">Flook AI - Complete Gmail Solution</h2>
+            <p class="text-light mb-4">Revolutionize your email management with our AI-powered Gmail integration. Automate patient communication, appointment scheduling, and follow-ups seamlessly.</p>
+            
+            <div class="d-flex align-items-center mb-4">
+              <div class="text-white me-4">
+                <div class="text-muted text-decoration-line-through">Original: ₹12,000</div>
+                <h3 class="text-white mb-1">₹6,000</h3>
+                <div class="price-discount" style="background: #fef3c7; color: #92400e;">50% OFF</div>
+              </div>
+              <div class="text-light">
+                <small>Renewal: ₹1,000/year</small>
+              </div>
+            </div>
+            
+            <div class="savings-badge mb-4">You Save ₹6,000</div>
+            
+            <a href="https://docs.google.com/forms/d/1w_nxLPRlKufKSMeEhLeEm32h0DakdC8_PlAAo24-PwI" class="btn btn-primary-modern btn-modern">
+              Get AI Solution
+            </a>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <img src="assets/img/alladin.png" class="img-fluid" alt="Flook AI">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-modern bg-light">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Get Started Today</h2>
+        <p>Ready to transform your ultrasound practice? Contact us for a free demo</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body p-5">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="feature-icon" style="width: 50px; height: 50px; border-radius: 12px;">
+                      <i class="bi bi-phone"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h5 class="mb-1">Call Us</h5>
+                      <p class="mb-0 text-muted">+91 9462285123</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="feature-icon" style="width: 50px; height: 50px; border-radius: 12px;">
+                      <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h5 class="mb-1">Email Us</h5>
+                      <p class="mb-0 text-muted">flook.customerservice@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="text-center mt-4">
+                <a href="https://wa.me/9462285123" class="btn btn-primary-modern btn-modern me-3">
+                  <i class="bi bi-whatsapp"></i> WhatsApp Demo
+                </a>
+                <a href="tel:+919462285123" class="btn btn-outline-modern btn-modern" style="border-color: var(--primary); color: var(--primary);">
+                  <i class="bi bi-telephone"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer -->
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-about">
+            <a href="#" class="d-flex align-items-center mb-3">
+              <img src="assets/img/logo.png" alt="Flook" height="40">
+              <span class="fw-bold ms-2 text-white">Flook</span>
+            </a>
+            <p class="text-light mb-4">India's leading ultrasound software solution, revolutionizing PCPNDT compliance with AI-powered technology.</p>
+            <div class="social-links d-flex gap-3">
+              <a href="#" class="text-light"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="publicprivacypolicy.html">Terms of service</a></li>
-            <li><a href="publicprivacypolicy.html">Privacy policy</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#ai">AI Solution</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Legal</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="publicprivacypolicy.html">Privacy Policy</a></li>
+            <li><a href="publicprivacypolicy.html">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Compliance</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <!-- <div class="loading">Loading</div> -->
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+        <div class="col-lg-3 col-md-6">
+          <h4>Newsletter</h4>
+          <p class="text-light">Subscribe for updates and industry insights</p>
+          <form class="mt-3">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-primary-modern" type="submit">
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
           </form>
         </div>
-
+      </div>
+      
+      <div class="text-center py-4 mt-4 border-top border-secondary">
+        <p class="mb-0 text-light">© 2024 Flook. All rights reserved. Designed by Bagarwastudio</p>
       </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Bagarwastudio</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a >Bagarwastudio</a>
-
-        <!-- Designed by <a href="https://bootstrapmade.com/">Bagarwastudio</a> -->
-      </div>
-    </div>
-
   </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Modern JS -->
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
 
+    // Initialize GLightbox for video
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.modern-nav');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Video play function
+    function playVideo() {
+      lightbox.open({
+        href: 'https://www.youtube.com/watch?v=y6QwWYuT0I4&feature=youtu.be',
+        type: 'video',
+        source: 'youtube',
+        width: '80vw',
+        height: '80vh'
+      });
+    }
+  </script>
 </body>
 
 </html>
