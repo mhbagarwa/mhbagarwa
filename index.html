@@ -425,6 +425,107 @@
       font-size: 1.125rem;
     }
 
+    /* Review Card Styles */
+    .review-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      height: 100%;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .reviewer-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .reviewer-info h5 {
+      color: var(--darker);
+      margin-bottom: 5px;
+    }
+
+    .rating {
+      color: #fbbf24;
+      font-size: 0.875rem;
+    }
+
+    .review-content {
+      margin-bottom: 20px;
+    }
+
+    .review-content p {
+      color: var(--gray);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .review-footer {
+      border-top: 1px solid var(--gray-light);
+      padding-top: 15px;
+    }
+
+    /* Trust Indicators */
+    .trust-indicators {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .trust-item {
+      padding: 20px;
+    }
+
+    .trust-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--gradient);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .trust-icon i {
+      font-size: 1.75rem;
+      color: white;
+    }
+
+    .trust-item h4 {
+      color: var(--darker);
+      margin-bottom: 10px;
+    }
+
     .modern-footer {
       background: var(--darker);
       color: white;
@@ -548,6 +649,19 @@
       .video-content {
         padding: 30px 20px;
       }
+      
+      .review-header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .rating {
+        align-self: flex-start;
+      }
+      
+      .trust-item {
+        margin-bottom: 30px;
+      }
     }
   </style>
 </head>
@@ -573,6 +687,7 @@
               <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
               <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+              <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
               <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
               <li class="nav-item"><a class="nav-link" href="#ai">AI Solution</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -791,6 +906,145 @@
     </div>
   </section>
 
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="section-modern">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>What Our Customers Say</h2>
+        <p>Join 500+ clinics across India who trust Flook for their ultrasound practice management</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                  RS
+                </div>
+                <div>
+                  <h5 class="mb-1">Dr. Rajesh Sharma</h5>
+                  <p class="text-muted mb-0">Radiologist, Delhi</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              <p>"Flook has transformed our ultrasound practice. The AI-powered F-Form management saves us hours of work each week. Compliance is now effortless!"</p>
+            </div>
+            <div class="review-footer">
+              <small class="text-muted">Used for 2+ years</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                  PP
+                </div>
+                <div>
+                  <h5 class="mb-1">Dr. Priya Patel</h5>
+                  <p class="text-muted mb-0">Gynecologist, Mumbai</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              <p>"The automatic report generation feature is a game-changer. We've reduced our paperwork by 70% and eliminated all manual errors. Highly recommended!"</p>
+            </div>
+            <div class="review-footer">
+              <small class="text-muted">Used for 1.5 years</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                  AK
+                </div>
+                <div>
+                  <h5 class="mb-1">Dr. Amit Kumar</h5>
+                  <p class="text-muted mb-0">Sonologist, Bangalore</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              <p>"The multi-device access and universal printing compatibility solved all our technical issues. Setup was quick and support is always responsive."</p>
+            </div>
+            <div class="review-footer">
+              <small class="text-muted">Used for 3 years</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="trust-indicators">
+            <div class="row text-center">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="trust-item">
+                  <div class="trust-icon">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <h4>4.9/5 Rating</h4>
+                  <p class="text-muted">Based on 200+ reviews</p>
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="trust-item">
+                  <div class="trust-icon">
+                    <i class="bi bi-building"></i>
+                  </div>
+                  <h4>500+ Clinics</h4>
+                  <p class="text-muted">Across India</p>
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="trust-item">
+                  <div class="trust-icon">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <h4>24/7 Support</h4>
+                  <p class="text-muted">Always here to help</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Pricing Section -->
   <section id="pricing" class="section-modern bg-light">
     <div class="container">
@@ -994,6 +1248,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#demo">Demo</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#ai">AI Solution</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -1084,6 +1339,17 @@
         height: '80vh'
       });
     }
+
+    // Initialize reviews section
+    function initReviews() {
+      // You can add any review-specific animations or interactions here
+      console.log('Reviews section initialized');
+    }
+
+    // Call the function when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initReviews();
+    });
   </script>
 </body>
 
