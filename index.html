@@ -625,6 +625,238 @@
       margin-bottom: 1rem;
     }
 
+    /* Smaller Popup Styles */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .popup-card {
+      background: white;
+      border-radius: 30px;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+      animation: popupZoom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
+      border: 2px solid var(--primary);
+    }
+
+    @keyframes popupZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .popup-header {
+      background: var(--gradient);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .popup-header h2 {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .popup-header .offer-tag {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      padding: 4px 16px;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      font-size: 0.8rem;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .popup-body {
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    .popup-gift-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--gradient);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      transform: rotate(-5deg);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .popup-gift-icon i {
+      font-size: 2rem;
+      color: white;
+      transform: rotate(5deg);
+    }
+
+    .popup-body h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--darker);
+      margin-bottom: 5px;
+    }
+
+    .popup-body .highlight {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.8rem;
+    }
+
+    .popup-deadline {
+      background: #fee2e2;
+      color: #dc2626;
+      padding: 8px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .popup-deadline i {
+      font-size: 1.1rem;
+    }
+
+    .popup-features {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .popup-feature {
+      background: #f3f4f6;
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--darker);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .popup-feature i {
+      color: var(--secondary);
+      font-size: 0.9rem;
+    }
+
+    .popup-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .popup-btn {
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .popup-btn-primary {
+      background: var(--gradient);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .popup-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    .popup-btn-secondary {
+      background: #f3f4f6;
+      color: var(--darker);
+    }
+
+    .popup-btn-secondary:hover {
+      background: #e5e7eb;
+      transform: translateY(-2px);
+    }
+
+    .close-popup {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .close-popup:hover {
+      background: rgba(255, 255, 255, 0.5);
+      transform: rotate(90deg);
+    }
+
+    .close-popup i {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .popup-countdown {
+      background: var(--darker);
+      color: white;
+      padding: 8px;
+      border-radius: 10px;
+      margin: 10px 0;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .popup-body .small-text {
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-top: 10px;
+    }
+
     @media (max-width: 768px) {
       .hero-title {
         font-size: 2.5rem;
@@ -662,11 +894,84 @@
       .trust-item {
         margin-bottom: 30px;
       }
+      
+      .popup-card {
+        max-width: 350px;
+      }
+      
+      .popup-header h2 {
+        font-size: 1.5rem;
+      }
+      
+      .popup-body {
+        padding: 20px 15px;
+      }
+      
+      .popup-body h3 {
+        font-size: 1.3rem;
+      }
+      
+      .popup-body .highlight {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- Smaller Front Popup -->
+  <div class="popup-overlay" id="welcomePopup">
+    <div class="popup-card">
+      <div class="close-popup" id="closePopupBtn">
+        <i class="bi bi-x"></i>
+      </div>
+      
+      <div class="popup-header">
+        <h2>🎉 LIMITED TIME</h2>
+        <span class="offer-tag">New User Special</span>
+      </div>
+      
+      <div class="popup-body">
+        <div class="popup-gift-icon">
+          <i class="bi bi-gift-fill"></i>
+        </div>
+        
+        <h3>Get <span class="highlight">6 Months FREE</span></h3>
+        <p class="text-muted small mb-2">on Flook Pro</p>
+        
+        <div class="popup-deadline">
+          <i class="bi bi-clock-fill"></i>
+          Valid until March 31st Only!
+        </div>
+        
+        <div class="popup-features">
+          <span class="popup-feature"><i class="bi bi-check-circle-fill"></i> Full Access</span>
+          <span class="popup-feature"><i class="bi bi-check-circle-fill"></i> No Payment</span>
+        </div>
+        
+        <div class="popup-countdown">
+          ⏰ Limited spots available
+        </div>
+        
+        <div class="popup-buttons">
+          <a href="https://drive.google.com/uc?export=download&id=1l8MeSXCTK1my9F4SUWE2tRsXoxAtficR" 
+             class="popup-btn popup-btn-primary" 
+             id="claimOfferBtn"
+             onclick="handleClaimClick(event)">
+            <i class="bi bi-gift-fill me-1"></i>Claim Offer
+          </a>
+          <button class="popup-btn popup-btn-secondary" id="maybeLaterBtn">
+            Later
+          </button>
+        </div>
+        
+        <p class="small-text">
+          <i class="bi bi-shield-check"></i> No credit card required
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!-- Modern Header -->
   <header class="modern-nav fixed-top">
@@ -689,11 +994,10 @@
               <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
               <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
               <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ai">AI Solution</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
               <li class="nav-item">
                 <a class="btn btn-primary-modern btn-modern ms-2" href="https://drive.google.com/uc?export=download&id=1l8MeSXCTK1my9F4SUWE2tRsXoxAtficR">
-                  Get Demo
+                  Download
                 </a>
               </li>
             </ul>
@@ -714,16 +1018,12 @@
           <h1 class="hero-title">Revolutionize Your Ultrasound Practice with AI-Powered F-Form Software</h1>
           <p class="hero-subtitle">Streamline your PCPNDT compliance with India's most advanced, user-friendly ultrasound software solution</p>
           <div class="d-flex flex-wrap gap-3">
-            
-
             <a href="youtube.com/watch?v=PJYkwn1Pyck&feature=youtu.be" class="glightbox btn btn-primary-modern btn-modern me-3">
-                  <i class="bi bi-play-circle me-2"></i>Promo Video
-                </a>
+              <i class="bi bi-play-circle me-2"></i>Promo Video
+            </a>
             <a href="#pricing" class="btn btn-outline-modern btn-modern">
               Get Free Demo
             </a>
-
-
           </div>
         </div>
         <div class="col-lg-6">
@@ -741,19 +1041,10 @@
           <div class="stat-number">10+</div>
           <div class="stat-label">Years Experience</div>
         </div>
-      <!-- #region  
-       <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="stat-number">500+</div>
-          <div class="stat-label">Clinics Trust Us</div>
-        </div>
-
-        -->
-
         <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-delay="100">
           <div class="stat-number">500+</div>
           <div class="stat-label">Trust Us</div>
         </div>
-
         <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-delay="200">
           <div class="stat-number">99%</div>
           <div class="stat-label">Accuracy Rate</div>
@@ -864,8 +1155,6 @@
                 and seamless multi-device access. This 5-minute demo shows real-world usage scenarios and key features that 
                 make Flook India's most trusted ultrasound software.
               </p>
-              
-               
               
               <div class="mt-4">
                 <a href="https://www.youtube.com/watch?v=iEm-2oB2vxw" class="glightbox btn btn-primary-modern btn-modern me-3">
@@ -1152,41 +1441,6 @@
     </div>
   </section>
 
-  <!-- AI Solution Section -->
-  <!-- <section id="ai" class="section-modern">
-    <div class="container">
-      <div class="ai-section">
-        <div class="row align-items-center">
-          <div class="col-lg-6 p-5" data-aos="fade-right">
-            <span class="ai-badge">Limited Time Offer</span>
-            <h2 class="text-white mb-4">Flook AI - Complete Gmail Solution</h2>
-            <p class="text-light mb-4">Revolutionize your email management with our AI-powered Gmail integration. Automate patient communication, appointment scheduling, and follow-ups seamlessly.</p>
-            
-            <div class="d-flex align-items-center mb-4">
-              <div class="text-white me-4">
-                <div class="text-muted text-decoration-line-through">Original: ₹12,000</div>
-                <h3 class="text-white mb-1">₹6,000</h3>
-                <div class="price-discount" style="background: #fef3c7; color: #92400e;">50% OFF</div>
-              </div>
-              <div class="text-light">
-                <small>Renewal: ₹1,000/year</small>
-              </div>
-            </div>
-            
-            <div class="savings-badge mb-4">You Save ₹6,000</div>
-            
-            <a href="https://docs.google.com/forms/d/1w_nxLPRlKufKSMeEhLeEm32h0DakdC8_PlAAo24-PwI" class="btn btn-primary-modern btn-modern">
-              Get AI Solution
-            </a>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <img src="assets/img/alladin.png" class="img-fluid" alt="Flook AI">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!-- Contact Section -->
   <section id="contact" class="section-modern bg-light">
     <div class="container">
@@ -1251,10 +1505,8 @@
             </a>
             <p class="text-light mb-4">India's leading ultrasound software solution, revolutionizing PCPNDT compliance with AI-powered technology.</p>
             <div class="social-links d-flex gap-3">
-              <!-- <a href="#" class="text-light"><i class="bi bi-twitter-x"></i></a> -->
               <a href="https://www.facebook.com/profile.php?id=100091743423505" class="text-light"><i class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/flook.in.social" class="text-light"><i class="bi bi-instagram"></i></a>
-              <!-- <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a> -->
             </div>
           </div>
         </div>
@@ -1267,7 +1519,6 @@
             <li><a href="#demo">Demo</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <!-- <li><a href="#ai">AI Solution</a></li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -1278,7 +1529,6 @@
             <li><a href="publicprivacypolicy.html">Privacy Policy</a></li>
             <li><a href="publicprivacypolicy.html">Terms of Service</a></li>
             <li><a href="#">Refund Policy</a></li>
-            <!-- <li><a href="#">Compliance</a></li> -->
           </ul>
         </div>
 
@@ -1357,16 +1607,65 @@
       });
     }
 
-    // Initialize reviews section
-    function initReviews() {
-      // You can add any review-specific animations or interactions here
-      console.log('Reviews section initialized');
+    // Handle claim button click - download and close popup
+    function handleClaimClick(event) {
+      event.preventDefault(); // Prevent immediate navigation
+      
+      // Close the popup
+      const popup = document.getElementById('welcomePopup');
+      popup.style.opacity = '0';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 300);
+      
+      // Open the download link in a new tab after popup closes
+      setTimeout(() => {
+        window.open('https://drive.google.com/uc?export=download&id=1l8MeSXCTK1my9F4SUWE2tRsXoxAtficR', '_blank');
+      }, 350);
     }
 
-    // Call the function when the page loads
-    document.addEventListener('DOMContentLoaded', function() {
-      initReviews();
+    // Popup functionality
+    const popup = document.getElementById('welcomePopup');
+    const closeBtn = document.getElementById('closePopupBtn');
+    const maybeLaterBtn = document.getElementById('maybeLaterBtn');
+
+    // Function to close popup
+    function closePopup() {
+      popup.style.opacity = '0';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 300);
+    }
+
+    // Close popup when clicking close button
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closePopup);
+    }
+
+    // Maybe later button - just closes popup
+    if (maybeLaterBtn) {
+      maybeLaterBtn.addEventListener('click', function() {
+        closePopup();
+      });
+    }
+
+    // Close popup when clicking outside (on overlay)
+    popup.addEventListener('click', function(e) {
+      if (e.target === popup) {
+        closePopup();
+      }
     });
+
+    // Prevent closing when clicking inside popup card
+    document.querySelector('.popup-card').addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+
+    // Auto-show popup after 2 seconds
+    setTimeout(() => {
+      popup.style.display = 'flex';
+      popup.style.opacity = '1';
+    }, 500);
   </script>
 </body>
 
