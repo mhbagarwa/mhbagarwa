@@ -301,15 +301,95 @@
         </div> -->
 
 
-        <div class="col-lg-5 mt-5 mt-lg-0" data-aos="zoom-in">
+        <!-- <div class="col-lg-5 mt-5 mt-lg-0" data-aos="zoom-in">
     <div class="p-2 bg-white shadow-lg border rounded-3 position-relative">
         <img src="assets/img/hero-bg2.png"
              class="img-fluid"
              alt="Flook Ultrasound F-Form and Patient Data Management Dashboard"
              width="500"
              height="400">
+    </div> -->
+
+<div class="col-lg-5 mt-5 mt-lg-0" data-aos="zoom-in">
+
+    <div class="video-box shadow-lg border rounded-3 overflow-hidden">
+
+        <!-- Thumbnail -->
+        <div id="thumbnailWrapper" class="position-relative">
+
+            <img
+                src="assets/img/hero-bg2.png"
+                class="img-fluid w-100"
+                alt="Flook Dashboard">
+
+            <!-- Play Button -->
+            <button id="playButton" class="play-btn">
+                <i class="bi bi-play-fill"></i>
+            </button>
+
+        </div>
+
+        <!-- Video -->
+        <div id="videoWrapper" style="display:none;">
+            <div class="ratio ratio-16x9">
+                <iframe
+                    id="heroVideo"
+                    src=""
+                    title="Flook Demo Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
     </div>
+
 </div>
+
+<style>
+.video-box{
+    background:#fff;
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90px;
+    height:90px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.65);
+    color:#fff;
+    font-size:48px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.play-btn:hover{
+    transform:translate(-50%,-50%) scale(1.1);
+    background:rgba(0,0,0,.85);
+}
+
+.play-btn i{
+    line-height:1;
+}
+</style>
+
+<script>
+document.getElementById("playButton").addEventListener("click", function () {
+
+    document.getElementById("thumbnailWrapper").style.display = "none";
+
+    document.getElementById("videoWrapper").style.display = "block";
+
+    document.getElementById("heroVideo").src =
+        "https://www.youtube.com/embed/PJYkwn1Pyck?autoplay=1";
+});
+</script>
+  </div>
 
 
 
