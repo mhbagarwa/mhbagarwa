@@ -119,8 +119,85 @@
         transform:translateY(-2px);
     }
 
-    @media(max-width:768px){
+    /* ---- Modal Styling ---- */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+        z-index: 999;
+    }
 
+    .modal-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-box {
+        background: white;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        text-align: center;
+        max-width: 350px;
+        width: 90%;
+        transform: scale(0.9);
+        transition: transform 0.2s ease;
+    }
+
+    .modal-overlay.active .modal-box {
+        transform: scale(1);
+    }
+
+    .modal-box h3 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+    }
+
+    .bit-select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #cbd5e1;
+        font-size: 15px;
+        margin-bottom: 20px;
+        outline: none;
+    }
+
+    .modal-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .modal-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .confirm-btn {
+        background: #16a34a;
+        color: white;
+    }
+
+    .cancel-btn {
+        background: #94a3b8;
+        color: white;
+    }
+
+    @media(max-width:768px){
         body{
             padding:15px;
         }
@@ -146,7 +223,6 @@
         <p>Software Versions, Compression & System Requirements</p>
     </div>
 
-    <!-- Latest Version -->
     <div class="card">
         <h2>Latest Version</h2>
 
@@ -181,7 +257,6 @@
         </table>
     </div>
 
-    <!-- Old Versions -->
     <div class="card">
         <h2>Old Versions</h2>
 
@@ -199,15 +274,16 @@
 
             <tbody>
                 <tr>
-                    <td>Flook instller</td>
+                    <td>Flook Installer</td>
                     <td>v25.12.10</td>
                     <td>ZIP Compression</td>
                     <td>132 MB</td>
                     <td><span class="badge old">Old</span></td>
                     <td>
-                        <a href="https://drive.google.com/uc?export=download&id=1CwvOyfIvkybXZpqaRP0663yxuf3oWMKD"
-                           class="download-btn"
-                           download>
+                        <a href="#" 
+                           class="download-btn open-bit-modal"
+                           data-url64="https://drive.google.com/uc?export=download&id=PUT_64BIT_DRIVE_ID_HERE"
+                           data-url32="https://drive.google.com/uc?export=download&id=PUT_32BIT_DRIVE_ID_HERE">
                            Download
                         </a>
                     </td>
@@ -220,9 +296,10 @@
                     <td>132 MB</td>
                     <td><span class="badge old">Old</span></td>
                     <td>
-                        <a href="downloads/FlookPro_v25.12.10.zip"
-                           class="download-btn"
-                           download>
+                        <a href="#" 
+                           class="download-btn open-bit-modal"
+                           data-url64="downloads/FlookPro_v25.12.10_x64.zip"
+                           data-url32="downloads/FlookPro_v25.12.10_x32.zip">
                            Download
                         </a>
                     </td>
@@ -235,9 +312,10 @@
                     <td>120 MB</td>
                     <td><span class="badge old">Old</span></td>
                     <td>
-                        <a href="downloads/FlookPro_v25.08.15.zip"
-                           class="download-btn"
-                           download>
+                        <a href="#" 
+                           class="download-btn open-bit-modal"
+                           data-url64="downloads/FlookPro_v25.08.15_64bit.zip"
+                           data-url32="downloads/FlookPro_v25.08.15_32bit.zip">
                            Download
                         </a>
                     </td>
@@ -246,7 +324,6 @@
         </table>
     </div>
 
-    <!-- Additional Required Software -->
     <div class="card">
         <h2>Required Additional Software</h2>
 
@@ -261,15 +338,15 @@
             </thead>
 
             <tbody>
-
                 <tr>
                     <td>Microsoft Access Database Engine</td>
                     <td>Required for Access Database Connectivity</td>
                     <td><span class="badge required">Required</span></td>
                     <td>
-                        <a href="downloads/AccessDatabaseEngine.exe"
-                           class="download-btn"
-                           download>
+                        <a href="#" 
+                           class="download-btn open-bit-modal"
+                           data-url64="downloads/AccessDatabaseEngine_x64.exe"
+                           data-url32="downloads/AccessDatabaseEngine_x86.exe">
                            Download
                         </a>
                     </td>
@@ -280,19 +357,18 @@
                     <td>Required to Run Flook Pro</td>
                     <td><span class="badge required">Required</span></td>
                     <td>
-                        <a href="downloads/dotnet-runtime.exe"
-                           class="download-btn"
-                           download>
+                        <a href="#" 
+                           class="download-btn open-bit-modal"
+                           data-url64="downloads/dotnet-runtime-64.exe"
+                           data-url32="downloads/dotnet-runtime-32.exe">
                            Download
                         </a>
                     </td>
                 </tr>
-
             </tbody>
         </table>
     </div>
 
-    <!-- System Requirements -->
     <div class="card">
         <h2>System Requirements</h2>
 
@@ -306,42 +382,99 @@
             </thead>
 
             <tbody>
-
                 <tr>
                     <td>Operating System</td>
                     <td>Windows 10</td>
                     <td>Windows 11</td>
                 </tr>
-
                 <tr>
                     <td>Processor</td>
                     <td>Intel i3</td>
                     <td>Intel i5 / Ryzen 5</td>
                 </tr>
-
                 <tr>
                     <td>RAM</td>
                     <td>4 GB</td>
                     <td>8 GB+</td>
                 </tr>
-
                 <tr>
                     <td>Storage</td>
                     <td>2 GB Free Space</td>
                     <td>SSD Recommended</td>
                 </tr>
-
                 <tr>
                     <td>Display</td>
                     <td>1366×768</td>
                     <td>1920×1080</td>
                 </tr>
-
             </tbody>
         </table>
     </div>
 
 </div>
+
+<div class="modal-overlay" id="bitModal">
+    <div class="modal-box">
+        <h3>Select Architecture</h3>
+        <p style="color: #666; margin-bottom: 15px; font-size: 14px;">Please select system architecture version to continue download.</p>
+        
+        <select class="bit-select" id="bitSelection">
+            <option value="64">64-bit Version</option>
+            <option value="32">32-bit Version</option>
+        </select>
+
+        <div class="modal-actions">
+            <button class="modal-btn cancel-btn" id="closeModal">Cancel</button>
+            <button class="modal-btn confirm-btn" id="confirmDownload">Download</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('bitModal');
+    const bitSelection = document.getElementById('bitSelection');
+    const confirmDownloadBtn = document.getElementById('confirmDownload');
+    const closeModalBtn = document.getElementById('closeModal');
+    
+    // Objects to hold both URLs temporarily when user clicks a button
+    let selectedLink64 = '';
+    let selectedLink32 = '';
+
+    // Catch clicks on all older/required download buttons
+    document.querySelectorAll('.open-bit-modal').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault(); // Stop default navigation
+            
+            // Extract the custom 64-bit and 32-bit URLs stored in this specific button
+            selectedLink64 = this.getAttribute('data-url64');
+            selectedLink32 = this.getAttribute('data-url32');
+            
+            // Open the dropdown popup
+            modal.classList.add('active');
+        });
+    });
+
+    // Handle the final download click inside the popup modal
+    confirmDownloadBtn.addEventListener('click', function() {
+        const choice = bitSelection.value;
+        let finalDownloadUrl = (choice === '64') ? selectedLink64 : selectedLink32;
+
+        // Execute the download using a temporary hidden element
+        const temporaryLink = document.createElement('a');
+        temporaryLink.href = finalDownloadUrl;
+        temporaryLink.setAttribute('download', '');
+        document.body.appendChild(temporaryLink);
+        temporaryLink.click();
+        document.body.removeChild(temporaryLink);
+
+        // Hide the popup menu modal
+        modal.classList.remove('active');
+    });
+
+    // Event handlers to dismiss/close the popup modal safely
+    closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
+    modal.addEventListener('click', (e) => { if(e.target === modal) modal.classList.remove('active'); });
+</script>
 
 </body>
 </html>
