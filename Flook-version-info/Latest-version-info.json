@@ -3,8 +3,8 @@
   "ReleaseDate": "2026-06-24T12:00:00Z",
   "MandatoryUpdate": true,
   "ReleaseNotes": "• MH\n• Feature Release: Streamlined, single-page Form F module introduced natively to optimize data entry.\n• Engine Performance: Significant rendering enhancements and application computing acceleration.\n• Stability and Infrastructure: Internal background patches deployed to guarantee structural fluidity.",
-  "Url32": "https://flook.in/Flook-setup/NDP46-KB3045557-x86-x64-AllOS-ENU.exe",
-  "Url64": "https://flook.in/Flook-setup/NDP46-KB3045557-x86-x64-AllOS-ENU.exe",
-  "FileName64": "Flook pro 64bit 26.3.7.zip",
-  "FileName32": "Flook pro 64bit 26.3.15.zip",
+  "Url32": "https://flook.in/Flook-setup/AccessDatabaseEngine.exe",
+  "Url64": "https://flook.in/Flook-setup/AccessDatabaseEngine.exe",
+  "FileName64": "Flook pro Setup v26.06.01",
+  "FileName32": "Flook pro Setup v26.06.01",
 }
