@@ -2,9 +2,9 @@
   "Version": "26.07.01.0",
   "ReleaseDate": "2026-06-24T12:00:00Z",
   "MandatoryUpdate": true,
-  "ReleaseNotes": "• MHKB\n• Feature Release: Streamlined, single-page Form F module introduced natively to optimize data entry.\n• Engine Performance: Significant rendering enhancements and application computing acceleration.\n• Stability and Infrastructure: Internal background patches deployed to guarantee structural fluidity.",
+  "ReleaseNotes": "• hussain\n• Feature Release: Streamlined, single-page Form F module introduced natively to optimize data entry.\n• Engine Performance: Significant rendering enhancements and application computing acceleration.\n• Stability and Infrastructure: Internal background patches deployed to guarantee structural fluidity.",
   "Url32": "https://github.com/mhbagarwa/mhbagarwa/releases/download/FJun26/Flook.pro.Setup.v26.06.01.exe",
   "Url64": "https://github.com/mhbagarwa/mhbagarwa/releases/download/FJun26/Flook.pro.Setup.v26.06.01.exe",
-  "FileName64": "Flookpro64",
-  "FileName32": ""Flookpro32",
+  "FileName64": "Flookpro64.exe",
+  "FileName32": "Flookpro32.exe"
 }
