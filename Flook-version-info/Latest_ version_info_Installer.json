@@ -1,0 +1,9 @@
+{
+  "Version": "2.0",
+ "signup_trailperiod": "15",
+"signup_custumform": "yes",
+ "checkduplicate_account": "yes",
+ "Demo_period": "90 Days ",
+  "ReleaseNotes": "Performance improved",
+  "Url": "https://aryvugqmkwmodrjlnbjc.supabase.co/storage/v1/object/public/Flook_setup/Flook_2026_1.0/Flook_Pro_2026.1.0%2064bit.zip" 
+}
